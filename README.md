@@ -1,5 +1,36 @@
 # PocArchitecture
 
+NX/
+└── frontend-monorepo/
+    ├── apps/
+    │   ├── dashboard/                    # Angular app with accessibility
+    │   ├── dashboard-e2e/               # E2E tests (Playwright)
+    │   ├── dashboard-unit-tests/        # Unit tests (Vitest)
+    │   ├── web-components/              # Lit components
+    │   │   └── storybook/              # Component documentation
+    │   └── design-system-showcase/      # Design system demo app(V2)
+    ├── libs/
+    │   ├── i18n/
+    │   │   ├── web-components/         # i18n for web components
+    │   │   ├── dashboard/              # i18n for dashboard
+    │   │   └── core/                   # Shared i18n utilities
+    │   ├── accessibility/
+    │   │   ├── utils/                  # A11y utilities
+    │   │   ├── directives/             # A11y directives
+    │   │   └── testing/                # A11y testing helpers
+    │   └── design-tokens/              # Design system tokens
+    ├── tools/
+    │   ├── scripts/                    # Build/deployment scripts
+    │   ├── eslint-rules/               # Custom ESLint rules
+    │   └── generators/                 # NX generators
+    ├── integration-tests/              # Cross-app integration tests
+    ├── .github/                        # GitHub Actions
+    │   └── workflows/
+    ├── .bitbucket/                     # Bitbucket Pipelines
+    │   └── pipelines/
+    ├── docs/                           # Documentation
+    └── configs/                        # Shared configurations
+    
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
 ✨ Your new, shiny [Nx workspace](https://nx.dev) is almost ready ✨.
