@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@poc-architecture/web-components": ["apps/web-components/src/index.ts"]
+      "@poc-architecture/web-components": ["libs/web-components/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
