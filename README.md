@@ -3,13 +3,11 @@
 NX/
 └── frontend-monorepo/
     ├── apps/
-    │   ├── dashboard/                    # Angular app with accessibility
+    │   ├── dashboard/                    # Angular app with accessibility # Unit tests (Vitest)
     │   ├── dashboard-e2e/               # E2E tests (Playwright)
-    │   ├── dashboard-unit-tests/        # Unit tests (Vitest)
-    │   ├── web-components/              # Lit components
-    │   │   └── storybook/              # Component documentation
-    │   └── design-system-showcase/      # Design system demo app(V2)
     ├── libs/
+    │   ├── web-components/       # Lit components
+    │   │  └── storybook/         # Component documentation     
     │   ├── i18n/
     │   │   ├── web-components/         # i18n for web components
     │   │   ├── dashboard/              # i18n for dashboard
