@@ -67,6 +67,12 @@
       "linter": "eslint",
       "style": "scss",
       "unitTestRunner": "vitest"
+    },
+    "@nx/web:application": {
+      "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "vitest",
+      "e2eTestRunner": "playwright"
     }
   }
 }

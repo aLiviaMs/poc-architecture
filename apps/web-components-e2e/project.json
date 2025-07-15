@@ -1,0 +1,25 @@
+{
+  "name": "web-components-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/web-components-e2e/src",
+  "projectType": "application",
+  "tags": [],
+  "implicitDependencies": ["web-components"],
+  "// targets": "to see all targets run: nx show project web-components-e2e --web",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "outputs": ["{workspaceRoot}/dist/.playwright/apps/web-components-e2e"],
+      "options": {
+        "config": "apps/web-components-e2e/playwright.config.ts",
+        "skipInstall": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["apps/web-components-e2e/**/*.ts"]
+      }
+    }
+  }
+}
