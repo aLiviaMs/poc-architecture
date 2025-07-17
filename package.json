@@ -2,7 +2,10 @@
   "name": "@poc-architecture/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:lit": "nx build web-components",
+    "start:with-lit": "nx build web-components && nx serve dashboard"
+  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~20.0.0",

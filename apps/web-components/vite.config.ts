@@ -15,13 +15,22 @@ export default defineConfig(() => ({
     host: 'localhost',
   },
   plugins: [nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
-  // Uncomment this if you are using workers.
-  // worker: {
-  //  plugins: [ nxViteTsPaths() ],
-  // },
   build: {
-    outDir: '../../dist/apps/web-components',
-    emptyOutDir: true,
+    // outDir: '../../dist/apps/web-components',
+    // emptyOutDir: true,
+    lib: {
+      entry: 'src/index.ts',
+      name: 'WebComponents',
+      fileName: 'index',
+    },
+    rollupOptions: {
+      external: ['lit'],
+      output: {
+        globals: {
+          lit: 'lit',
+        },
+      },
+    },
     reportCompressedSize: true,
     commonjsOptions: {
       transformMixedEsModules: true,

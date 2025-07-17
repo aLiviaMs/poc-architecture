@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixins";
+
+body {
+  @include light-theme;
+  --link-color: var(--primary-color);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @include dark-theme;
+  }
+}
+
+a {
+  color: var(--link-color);
+}

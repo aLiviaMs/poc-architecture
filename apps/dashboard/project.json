@@ -90,6 +90,17 @@
         "staticFilePath": "dist/apps/dashboard/browser",
         "spa": true
       }
+    },
+    "architect": {
+      "build": {
+        "options": {
+          "stylePreprocessorOptions": {
+            "includePaths": [
+              "libs/theme/src"
+            ]
+          }
+        }
+      }
     }
   }
 }

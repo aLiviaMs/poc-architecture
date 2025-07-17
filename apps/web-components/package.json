@@ -1,0 +1,16 @@
+{
+  "name": "@poc-architecture/web-components",
+  "version": "1.0.0",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "lit": "^3.3.1"
+  }
+}
